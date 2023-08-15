@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none; /*hides scroll bar but doesn't affect functionality of it */
+}
+
+.anchor{ /* for centering about page anchor link*/
+    display: block;
+    height: 10vh; /*same height as header*/
+    margin-top: -10vh; /*same height as header*/
+    visibility: hidden;
+  }
+
+:root {
+    --green: #82C767;
+    --white: #ffffff;
+    --darkGreen: #162824;
+    --offWhite: #F3F6F9;
+}
+
+
+.defualtContent {
+    max-width: 1000px;
+    width: 100vw;
+    min-width: 10px;
+    margin: auto;
+}
+
+.button {
+    background-color: var(--green);
+    padding: 20px;
+    border-radius: 18px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.green {
+    color: var(--green)
+}
+
+.white {
+    color: var(--white)
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 40px;
+    font-size: 60px;
+}
+
+a {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.floating {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+}
+
+.queen{
+    rotate: 20deg;
+    left: 100px;
+    top: 200px;
+}
+
+.knight{
+    transform: scaleX(-1);
+    rotate: -10deg;
+    right: 250px;
+    top: 920px ;
+}
+
+.pawn {
+    rotate: 10deg;
+    top: 1200px;
+}
+
+.chessBoard {
+    rotate: 20deg;
+    right: 100px;
+    top: 1400px;
+}
+
+.sectionTitle {
+   text-align: center;
+   font-size: 30px;
+   margin: 20px 0;
+}
+
+.navSection {
+    background-color: var(--darkGreen);
+    height: 10vh;
+    right: 0px;
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 10%;
+    margin-left: auto;
+    box-shadow: 0px 0px 10px var(--green);
+    z-index: 3;
+}
+
+.navMenu {
+  display: flex;
+}
+
+.navItem{
+    padding: 30px;
+    margin: 10px;
+    color: var(--white);
+}
+
+.navItem:hover {
+    color: var(--green);
+}
+
+.landingSection {
+    display: flex;
+    height: 100vh;
+    background-color: #162824;
+}
+
+.landingContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.landingInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.landingText {
+    margin-bottom: 60px;
+}
+
+.landingInteract {
+    display:flex;
+    justify-content: space-between;
+}
+
+.pfp {
+    width: 380px;
+    height: 490px;
+    border-radius: 18px;
+    box-shadow: 10px 10px var(--green);
+}
+
+.aboutSection {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+
+.aboutContent {
+    display: flex;
+    align-items: center;
+}
+
+.aboutPfp {
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    border-radius: 50px;
+}
+
+.aboutBlob {
+    position: absolute;
+    z-index: 0;
+    width: 280px;
+    height: 230px;
+    margin-left: -60px;
+    margin-top: 50px;
+}
+
+.aboutDivider {
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.links {
+    display: flex;
+    padding: 10px;
+}
+
+.aboutIcons {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+.aboutIcons:hover {
+    box-shadow: 0px 0px 10px var(--green);
+    border-radius: 5px;
+}
+
+.skillSection {
+    background-color: var(--darkGreen);
+}
+
+.skillContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.skillDiv {
+    display: flex; 
+    background-color: var(--darkGreen);
+    justify-content: space-evenly;
+}
+
+.skillContainer{
+    background-color: var(--white);
+    margin: 0px 0px 40px 0px;
+    border-radius: 30px;
+}   
+
+.skillTitle {
+    text-align: center;
+    background-color: var(--green);
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 30px 30px 0 0;
+ }
+
+ .skillGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.skillSlot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillIcons {
+    width: 64px;
+    height: 64px;
+    margin: 0 30px;
+}
+
+.skillName {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+.projectSection {
+    background-color: var(--white)
+}
+
+.projectList {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projectDiv {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 0 30px;
+}
+
+.projectImg{
+    width: 230px;
+    height: 300px;
+    margin-bottom: 50px;
+    z-index: 1;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px var(--green);
+}
+
+.projectInfo{
+    position: absolute;
+    justify-content: space-between;
+    background-color: var(--offWhite);
+    margin: 20px 20px 20px 200px;
+    padding: 20px 20px 20px 80px;
+    border-radius: 20px;
+    min-width: 550px;
+    min-height: 250px;
+}
+
+.projectTitle {
+    background-color: var(--white);
+    padding: 15px 20px 15px 20px;
+    width: fit-content;
+    border-radius: 45px;
+    font-size: 18px;
+    font-weight: 700;
+    border: solid grey 2px;
+}
+
+.projectDescription{
+    margin-bottom: 60px;
+    font-size: 14px;
+}
+
+.projectSkills {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.projectIcons {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.projectButton {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.footer {
+ background-color: var(--darkGreen);
+ height: 10vh;
+}
